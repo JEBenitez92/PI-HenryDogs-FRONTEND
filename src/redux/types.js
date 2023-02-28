@@ -1,0 +1,12 @@
+export const GET_RAZA_NAME = "GET_RAZA";
+export const GET_RAZAS = "GET_RAZAS";
+export const GET_TEMPERAMENTOS = "GET_TEMPERAMENTOS";
+export const ORDER_RAZA = "ORDER_RAZA";
+export const ORDER_TEMP = "ORDER_TEMP";
+export const ORDER_PESO = "ORDER_PES";
+export const ORDER_ALFABETICO = "ORDER_ALFABETICO";
+export const GET_RAZAS_NOMBRES = "GET_RAZAS_NOMBRES";
+export const GET_RAZA_ID = "GET_RAZA_ID";
+export const ADD_FAVORITO = "ADD_FAVORITO";
+export const DELET_FAVORITO = "DELET_FAVORITO";
+export const VACIAR_FAVORITOS = "VACIAR_FAVORITOS";

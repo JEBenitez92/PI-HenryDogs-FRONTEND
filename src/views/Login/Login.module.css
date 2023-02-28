@@ -1,0 +1,258 @@
+.contenedorGeneral {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+  background-color: rgb(90, 151, 230);
+  background-image: url("./imagenes/Paisaje.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenedorGeneral h1 {
+  justify-content: center;
+  display: inline-block;
+  position: relative;
+  bottom: 6rem;
+  left: 21rem;
+}
+
+.contenedorParrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 3rem;
+  position: relative;
+  top: 1rem;
+  right: 13rem;
+  width: 45rem;
+  background-color: rgba(135, 206, 235, 0.5);
+  opacity: 0.9;
+}
+
+.Parrafo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contenedorParrafo p {
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+.contenedorH3 {
+  display: inline-block;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  bottom: 8rem;
+  left: 16rem;
+}
+
+.contenedorH3 h3 {
+  font-size: 1.5rem;
+}
+
+.contenedorButton {
+  display: inline-block;
+  position: relative;
+  right: 2rem;
+  bottom: 16rem;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorButton button {
+  color: brown;
+  background-color: chartreuse;
+  border-color: red;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  box-shadow: 0px 0px 0px 5px #050e17;
+  transition: box-shadow 0.9s ease-in-out;
+}
+
+.contenedorButton button:hover {
+  box-shadow: 0px 0px 0px 5px #007bff;
+}
+
+.imagenCucha {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  top: 8rem;
+  left: 5rem;
+  background-image: url("./imagenes/Cucha.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagenPastorAleman {
+  display: inline-block;
+  position: relative;
+  top: 9rem;
+  left: 6rem;
+  overflow: hidden;
+  background-image: url("./imagenes/PastorAleman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 8rem;
+  height: 8rem;
+}
+
+.cucha2 {
+  overflow: hidden;
+  background-image: url("./imagenes/Cucha2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+  top: 8rem;
+  right: 60rem;
+}
+
+.perroAnimado {
+  overflow: hidden;
+  background-image: url("./imagenes/PerroAnimado.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  top: 12rem;
+  right: 55rem;
+}
+
+@media (max-width: 650px){
+  .contenedorGeneral {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+    background-color: rgb(90, 151, 230);
+    background-image: url("./imagenes/Paisaje.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .contenedorGeneral h1 {
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    left: 0.1rem;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+
+  .contenedorParrafo {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 3rem;
+    position: relative;
+    right: 10rem;
+    width: 35rem;
+    padding: 1rem;
+    margin: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(135, 206, 235, 0.5);
+    opacity: 0.9;
+  }
+
+  .contenedorParrafo p {
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+
+  .contenedorH3 {
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+    left: 0;
+    padding: 0.2rem;
+  }
+
+  .contenedorH3 h3 {
+    font-size: 1.3rem;
+  }
+
+  .contenedorButton {
+    display: inline-block;
+    position: relative;
+    left:0;
+    right: 0;
+    bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedorButton button {
+    color: brown;
+    background-color: chartreuse;
+    border-color: red;
+    border-radius: 5rem;
+    font-size: 1rem;
+    box-shadow: 0px 0px 0px 5px #050e17;
+    transition: box-shadow 0.9s ease-in-out;
+  }
+
+  .cucha2{
+    display: none;
+  }
+
+  .perroAnimado{
+    display: none;
+  }
+
+  .imagenCucha {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    background-image: url("./imagenes/Cucha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    top: 0;
+  }
+  
+  .imagenPastorAleman {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-image: url("./imagenes/PastorAleman.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    top: 0;
+  }
+}

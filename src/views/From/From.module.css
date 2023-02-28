@@ -1,0 +1,119 @@
+.contenedorGeneral {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(115, 238, 213, 0.798);
+  border: solid 1px red;
+}
+
+.contenedorMuestra {
+  position: relative;
+  top: 4rem;
+  border: solid 1px green;
+  border-radius: 2rem;
+  background-color: black;
+  opacity: 0.9;
+  width: 65%;
+  height: 85%;
+}
+
+.contenedorNombre {
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedorNombre h1 {
+  color: red;
+}
+
+.contenedorInfoImagen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  border: solid 1px rgb(30, 0, 255);
+}
+
+.contenedorImagen {
+  width: 150px;
+  height: 180px;
+  border: solid rgb(5, 245, 9);
+  border-radius: 3rem;
+}
+
+.contenedorImagen img {
+  width: 150px;
+  height: 180px;
+  border-radius: 3rem;
+}
+
+.contenedorInfo h3 {
+  color: white;
+}
+
+.contenedorTemperamento h3 {
+  color: white;
+}
+
+.contenedorFormulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.contenedorFormulario label {
+  margin: 0.4rem;
+  font-size: calc(12px + 2vmin);
+}
+
+.contenedorFormulario select {
+  margin: 0.4rem;
+  border: solid 2px blue;
+  border-radius: 0.5rem;
+  font-size: calc(4px + 2vmin);
+}
+
+.contenedorFormulario input {
+  font-size: calc(4px + 2vmin);
+  border: solid 2px blue;
+  border-radius: 0.5rem;
+}
+
+.contenedorError p {
+  color: red;
+  font-size: calc(6px + 2vmin);
+}
+
+.contenedorGeneral button {
+  font-size: calc(6px + 2vmin);
+  background-color: green;
+  border-radius: 1rem;
+  border: solid 1px red;
+  box-shadow: 0px 5px #050e17;
+}
+
+@media (max-width: 650px){
+  .contenedorGeneral {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(115, 238, 213, 0.798);
+    border: solid 1px red;
+  }
+
+  .contenedorMuestra{
+    display: none;
+  }
+}

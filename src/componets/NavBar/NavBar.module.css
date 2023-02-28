@@ -1,0 +1,104 @@
+.contenedor {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(95, 241, 16);
+  padding: 1em;
+  height: 5rem;
+  overflow: hidden;
+  background-image: url("./Imagen/Imagen_Varios_Perros.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenedorBotones {
+  display: flex;
+  margin: 1rem;
+}
+
+.contenedorBotones button {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.contenedorBotones button:hover{
+  box-shadow: 0px 5px #050e17;
+}
+
+.contenedorButtonBorrar{
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorButtonBorrar button {
+  font-size: 60px;
+  color: rgb(4, 42, 195);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.pButton {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: red;
+}
+
+.contenedorSerbach{
+  position: relative;
+  left: 20rem;
+}
+
+@media (max-width: 650px) {
+  .contenedorBotones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedorBotones button {
+    margin: 0.1rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+
+  .contenedorSerbach{
+    position: relative;
+    left: 3rem;
+  }
+
+  .contenedorButtonBorrar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 3rem;
+  }
+
+  .contenedorButtonBorrar button {
+    font-size: 40px;
+    color: rgb(4, 42, 195);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pButton {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: red;
+  }
+}

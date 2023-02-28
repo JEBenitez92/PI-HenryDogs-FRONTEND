@@ -1,0 +1,108 @@
+.contenedorGeneral {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./Imagenes/fondo_muchas_patitas.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.contenedorOrdenamiento {
+  display: flex;
+  position: relative;
+  right: 16rem;
+}
+
+.contenedorOrdenamiento select {
+  margin: 0.1rem;
+  font-size: calc(3px + 2vmin);
+  border-radius: 1rem;
+  background-color: rgb(13, 14, 13);
+  color: rgb(245, 249, 244);
+}
+
+.contenedorFiltro {
+  display: flex;
+  position: relative;
+  left: 17rem;
+}
+
+.contenedorFiltro select {
+  margin: 0.1rem;
+  font-size: calc(3px + 2vmin);
+  border-radius: 1rem;
+  background-color: rgb(0, 7, 0);
+  color: rgb(252, 253, 252);
+}
+
+.cardsContainers {
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+}
+
+.contenedorPaginacion {
+  position: relative;
+}
+
+.cargando{
+  width: 50rem;
+  height: 30rem;
+  background-color: rgb(237, 193, 111);
+}
+
+.imagenEsperando1{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 30rem;
+  height: 10rem;
+  margin: 0;
+  padding: 0;
+  background-image: url("./Imagenes/perros_esperando.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagenEsperando2{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 40rem;
+  height: 15rem;
+  margin: 0;
+  padding: 0;
+  bottom: 5rem;
+  background-image: url("./Imagenes/perro_esperando2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 650px) {
+  .contenedorOrdenamiento {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    right: 1rem;
+  }
+
+  .contenedorFiltro {
+    display: flex;
+    position: relative;
+    left: 0.3rem;
+  }
+}

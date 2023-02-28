@@ -1,0 +1,71 @@
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 3rem;
+  width: 17em;
+  height: 30em;
+  padding: 1em;
+  margin: 0.3em;
+}
+
+.carConteiner {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: calc(5px + 2vmin);
+  padding: 1em;
+  border-radius: 5rem;
+  background-color: black;
+  color: rgb(242, 244, 242);
+  opacity: 0.9;
+  width: 15em;
+  height: 30em;
+}
+
+.carConteiner img {
+  width: 150px;
+  height: 180px;
+  border-radius: 3rem;
+  border: solid 2px red;
+}
+
+.link {
+  color: rgb(0, 255, 26);
+  font-size: 20px;
+  margin: 0.5rem;
+}
+
+.button{
+  font-size: 20px;
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonActive{
+  font-size: 20px;
+  color: yellow;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonCierre {
+  background-color: white;
+  color: red;
+  border-radius: 5rem;
+  font-size: 18px;
+
+}
+
+.pTemperamentos {
+  margin: 0.1rem
+}
