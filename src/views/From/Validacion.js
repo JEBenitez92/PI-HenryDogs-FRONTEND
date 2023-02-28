@@ -55,7 +55,7 @@ export function validate(crear) {
     error.peso_max = "El valor del peso máximo tiene que ser mayor a 2";
   }
   if (parseInt(crear.peso_max) < parseInt(crear.peso_min)) {
-    error.peso_max = "El valor del peso máximo tiene que ser menor al peso minimo";
+    error.peso_max = "El valor del peso máximo tiene que ser mayor al peso minimo";
   }
 
   //validar altura minima
