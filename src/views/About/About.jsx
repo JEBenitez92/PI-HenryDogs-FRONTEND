@@ -61,7 +61,7 @@ const About = () => {
         <div className={Style.contenedorWhatsapp}>
         <div className={Style.ImagenWhatsapp}/>
         <div className={Style.EnlaceWhatsapp}>
-        <a href="https://wa.me/1150645938">Enviame un mensaje de WhatsApp</a>
+        <a href="https://wa.me/+541150645938">Enviame un mensaje de WhatsApp</a>
         </div>
         </div>
       </div>
