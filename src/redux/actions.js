@@ -65,7 +65,7 @@ export const vaciarFavoritos = ()=>{
 export const getRazas = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get("http://localhost:3001/dogs");
+      const apiData = await axios.get("pihenrydogsbacken-production.up.railway.app/dogs");
       const razas = apiData.data;
       dispatch({
         type: GET_RAZAS,
@@ -80,7 +80,7 @@ export const getRazas = () => {
 export const getRazasNombres = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get("http://localhost:3001/dogs");
+      const apiData = await axios.get("pihenrydogsbacken-production.up.railway.app/dogs");
       const razaNombre = apiData.data;
       dispatch({
         type: GET_RAZAS_NOMBRES,
@@ -96,7 +96,7 @@ export const getRazaName = (name) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `http://localhost:3001/dogs?nombre=${name}`
+        `pihenrydogsbacken-production.up.railway.app/dogs?nombre=${name}`
       );
       const razas = apiData.data;
       dispatch({
@@ -113,7 +113,7 @@ export const getRazaId = (detailId) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `http://localhost:3001/dogs/${detailId}`
+        `pihenrydogsbacken-production.up.railway.app/dogs/${detailId}`
       );
       const razas = apiData.data;
       dispatch({
@@ -130,7 +130,7 @@ export const getTemperamentos = () => {
   return async function (dispatch) {
     try {
       const apiTemp = await axios.get(
-        "http://localhost:3001/dogs/temperaments"
+        "pihenrydogsbacken-production.up.railway.app/dogs/temperaments"
       );
       const apiTempData = apiTemp.data;
       dispatch({
