@@ -47,7 +47,7 @@ const About = () => {
         <div className={Style.contenedroLikedin}>
         <div className={Style.ImagenLikedin}></div> 
         <div className={Style.EnlaceLinkedin}>
-          <a href="www.linkedin.com/in/Jonathan-Ezequiel-Benitez">Mi Linkedin</a>
+          <a href="https://www.linkedin.com/in/jonathan-ezequiel-benitez/">Mi Linkedin</a>
         </div>
         </div>
 
