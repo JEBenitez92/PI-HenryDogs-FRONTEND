@@ -54,10 +54,12 @@ const Home = () => {
       return dispatch(orderPeso(value));
     }
     if (name === "Temperamento") {
-      return dispatch(ordenTemp(value));
+      dispatch(ordenTemp(value));
+      return setPaginaActual(1)
     }
     if (name === "Raza") {
-      return dispatch(orderRaza(value));
+      dispatch(orderRaza(value));
+      return setPaginaActual(1)
     }
   };
 
