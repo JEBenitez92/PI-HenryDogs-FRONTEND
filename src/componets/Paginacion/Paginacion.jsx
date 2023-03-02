@@ -21,14 +21,17 @@ const Paginacion = ({ paginaActual, setPaginaActual, paginas }) => {
 
   const paginaAnterior = () => {
     setPaginaActual(paginaActual - 1);
+     window.scrollTo(0, 0);
   };
 
   const paginaSiguiente = () => {
     setPaginaActual(paginaActual + 1);
+     window.scrollTo(0, 0);
   };
 
   const numeroPagina = (num) => {
     setPaginaActual(num);
+     window.scrollTo(0, 0);
   };
 
   return (
