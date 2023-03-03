@@ -67,7 +67,7 @@ export const vaciarFavoritos = ()=>{
 export const getRazas = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get("http://localhost:3001/dogs");
+      const apiData = await axios.get("https://pihenrydogsbacken-production.up.railway.app/dogs");
       const razas = apiData.data;
       traducRazaTemp(razas, temperamentosTraducidos)
       dispatch({
@@ -83,7 +83,7 @@ export const getRazas = () => {
 export const getRazasNombres = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get("http://localhost:3001/dogs");
+      const apiData = await axios.get("https://pihenrydogsbacken-production.up.railway.app/dogs");
       const razaNombre = apiData.data;
       traducRazaTemp(razaNombre, temperamentosTraducidos)
       dispatch({
@@ -100,7 +100,7 @@ export const getRazaName = (name) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `http://localhost:3001/dogs?nombre=${name}`
+        `https://pihenrydogsbacken-production.up.railway.app/dogs?nombre=${name}`
       );
       const razas = apiData.data;
       traducRazaTemp(razas, temperamentosTraducidos)
@@ -118,7 +118,7 @@ export const getRazaId = (detailId) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `http://localhost:3001/dogs/${detailId}`
+        `https://pihenrydogsbacken-production.up.railway.app/dogs/${detailId}`
       );
       const razas = apiData.data;
       traducRazaTemp(razas, temperamentosTraducidos)
@@ -137,7 +137,7 @@ export const getTemperamentos = () => {
   return async function (dispatch) {
     try {
       const apiTemp = await axios.get(
-        "http://localhost:3001/dogs/temperaments"
+        "https://pihenrydogsbacken-production.up.railway.app/dogs/temperaments"
       );
       const apiTempData = apiTemp.data;
       const tempTraducido = traducir(apiTempData, temperamentosTraducidos).sort()
