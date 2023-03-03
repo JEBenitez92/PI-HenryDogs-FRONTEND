@@ -90,3 +90,15 @@
   bottom: 2rem;
 
 }
+
+@media (max-width: 650px) {
+  .conteiner {
+    width: 20em;
+    height: 33em;
+  }
+
+  .carConteiner {
+    width: 18em;
+    height: 33em;
+  }
+}
