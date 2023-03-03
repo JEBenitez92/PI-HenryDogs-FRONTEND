@@ -271,3 +271,19 @@
   padding: 0;
   cursor: pointer;
 }
+
+@media (max-width: 650px){
+  .contenedorContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .contenedorImagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 0.5rem;
+    
+  }
+}
