@@ -48,10 +48,14 @@ const Card = (props) => {
         <p className={Style.pTemperamentos}>
           Temperamentos:
         </p>
-          {props.Temperamentos.length > 1 ? props.Temperamentos : "No definido"}
+        <div className={Style.temp}>
+          {props.Temperamentos.length > 1 ? props.Temperamentos.replace(/,/g, ', ') : "No definido"}
+        </div>
+          
       </div>
     </div>
   );
 };
+
 
 export default Card;

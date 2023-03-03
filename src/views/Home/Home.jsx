@@ -21,7 +21,7 @@ const Home = () => {
   const nombre = nombres.filter((item, index) => {
     return nombres.indexOf(item) === index;
   });
-
+  
   const [cargando, setCargando] = useState(true);
  
   //para que se monte:
@@ -56,6 +56,7 @@ const Home = () => {
     if (name === "Temperamento") {
       dispatch(ordenTemp(value));
       return setPaginaActual(1)
+
     }
     if (name === "Raza") {
       dispatch(orderRaza(value));

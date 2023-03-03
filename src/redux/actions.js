@@ -13,6 +13,8 @@ import {
   VACIAR_FAVORITOS,
 } from "./types";
 import axios from "axios";
+import temperamentosTraducidos from "../Auxiliar/traduccion";
+import { traducir, traducRazaTemp } from "../Auxiliar/auxiliar";
 
 export const ordenTemp = (value) => {
   return {
@@ -65,8 +67,9 @@ export const vaciarFavoritos = ()=>{
 export const getRazas = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get("https://pihenrydogsbacken-production.up.railway.app/dogs");
+      const apiData = await axios.get("http://localhost:3001/dogs");
       const razas = apiData.data;
+      traducRazaTemp(razas, temperamentosTraducidos)
       dispatch({
         type: GET_RAZAS,
         payload: razas,
@@ -80,8 +83,9 @@ export const getRazas = () => {
 export const getRazasNombres = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get("https://pihenrydogsbacken-production.up.railway.app/dogs");
+      const apiData = await axios.get("http://localhost:3001/dogs");
       const razaNombre = apiData.data;
+      traducRazaTemp(razaNombre, temperamentosTraducidos)
       dispatch({
         type: GET_RAZAS_NOMBRES,
         payload: razaNombre,
@@ -96,9 +100,10 @@ export const getRazaName = (name) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `https://pihenrydogsbacken-production.up.railway.app/dogs?nombre=${name}`
+        `http://localhost:3001/dogs?nombre=${name}`
       );
       const razas = apiData.data;
+      traducRazaTemp(razas, temperamentosTraducidos)
       dispatch({
         type: GET_RAZA_NAME,
         payload: razas,
@@ -113,9 +118,11 @@ export const getRazaId = (detailId) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `https://pihenrydogsbacken-production.up.railway.app/dogs/${detailId}`
+        `http://localhost:3001/dogs/${detailId}`
       );
       const razas = apiData.data;
+      traducRazaTemp(razas, temperamentosTraducidos)
+
       dispatch({
         type: GET_RAZA_ID,
         payload: razas,
@@ -130,12 +137,17 @@ export const getTemperamentos = () => {
   return async function (dispatch) {
     try {
       const apiTemp = await axios.get(
-        "https://pihenrydogsbacken-production.up.railway.app/dogs/temperaments"
+        "http://localhost:3001/dogs/temperaments"
       );
       const apiTempData = apiTemp.data;
+      const tempTraducido = traducir(apiTempData, temperamentosTraducidos).sort()
+      const temp = tempTraducido.filter((item, index) => {
+        return tempTraducido.indexOf(item) === index;
+      });
+      
       dispatch({
         type: GET_TEMPERAMENTOS,
-        payload: apiTempData,
+        payload: temp,
       });
     } catch (error) {
       alert(error.request.response);

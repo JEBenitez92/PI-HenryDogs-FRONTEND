@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Style from "../CardsConteiner/CardsConteiners.module.css";
 
 const CardsContainers = ({ primerIndex, ultimoIndex }) => {
-  const razas = useSelector((state) => state.Razas);
+const razas = useSelector((state) => state.Razas);
 
   return (
     <div className={Style.container}>

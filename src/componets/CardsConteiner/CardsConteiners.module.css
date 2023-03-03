@@ -3,6 +3,7 @@
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 1em;
+  margin-top: 0.6rem;
   align-items: center;
   align-content: center;
   justify-items: center;

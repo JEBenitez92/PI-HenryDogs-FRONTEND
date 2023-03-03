@@ -47,7 +47,7 @@ const About = () => {
         <div className={Style.contenedroLikedin}>
         <div className={Style.ImagenLikedin}></div> 
         <div className={Style.EnlaceLinkedin}>
-          <a href="https://www.linkedin.com/in/jonathan-ezequiel-benitez/">Mi Linkedin</a>
+          <a href="www.linkedin.com/in/Jonathan-Ezequiel-Benitez">Mi Linkedin</a>
         </div>
         </div>
 
@@ -61,7 +61,7 @@ const About = () => {
         <div className={Style.contenedorWhatsapp}>
         <div className={Style.ImagenWhatsapp}/>
         <div className={Style.EnlaceWhatsapp}>
-        <a href="https://wa.me/+541150645938">Enviame un mensaje de WhatsApp</a>
+        <a href="https://wa.me/1150645938">Enviame un mensaje de WhatsApp</a>
         </div>
         </div>
       </div>

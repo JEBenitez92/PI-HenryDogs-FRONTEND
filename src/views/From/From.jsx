@@ -97,7 +97,7 @@ const From = () => {
 
       //para mandar la informacion a la base de datos:
       axios
-        .post("https://pihenrydogsbacken-production.up.railway.app/dogs", crear)
+        .post("http://localhost:3001/dogs", crear)
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
     } else {
