@@ -101,4 +101,9 @@
     width: 18em;
     height: 33em;
   }
+
+  .temp{
+    font-size: 14px;
+  }
+  
 }
