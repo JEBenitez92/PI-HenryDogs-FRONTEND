@@ -25,15 +25,16 @@ const Home = () => {
   const [cargando, setCargando] = useState(true);
  
   //para que se monte:
-  useEffect(() => {
-    //para las card
-    dispatch(getRazas());
-    //para las opciones de razas
-    dispatch(getRazasNombres());
-    //para las opciones de temperamentos
-    dispatch(getTemperamentos());
+useEffect(() => {
+  const cargandoDatos = async () => {
+    await dispatch(getRazas());
+    await dispatch(getRazasNombres());
+    await dispatch(getTemperamentos());
     setCargando(false);
-  }, [dispatch]);
+  }
+  cargandoDatos();
+}, [dispatch]);
+  
 
   //para la paginacion
   const [paginas] = useState(8);
@@ -65,6 +66,15 @@ const Home = () => {
   };
 
   return (
+    <div>
+      {cargando ? (
+        <div className={Style.cargando}>
+          <div className={Style.imagenEsperando1}/>
+          <h1>Cargando......</h1>
+          <div className={Style.imagenEsperando2}/>
+        </div>
+      ) : (
+       
     <div className={Style.contenedorGeneral}>
       <div className={Style.contenedorOrdenamiento}>
         <select name="Orden_Alfabetico" onClick={handleClick}>
@@ -100,20 +110,14 @@ const Home = () => {
           })}
         </select>
       </div>
-      {cargando ? (
-        <div className={Style.cargando}>
-          <div className={Style.imagenEsperando1}/>
-          <h1>Cargando......</h1>
-          <div className={Style.imagenEsperando2}/>
-        </div>
-      ) : (
+     
         <div className={Style.cardsContainers}>
           <CardsContainers
             ultimoIndex={ultimoIndex}
             primerIndex={primerIndex}
           />
         </div>
-      )}
+      
       <div className={Style.contenedorPaginacion}>
         <Paginacion
           paginaActual={paginaActual}
@@ -121,6 +125,8 @@ const Home = () => {
           paginas={paginas}
         />
       </div>
+    </div>
+      )}
     </div>
   );
 };
