@@ -97,7 +97,7 @@ const From = () => {
 
       //para mandar la informacion a la base de datos:
       axios
-        .post("https://pihenrydogsbacken-production.up.railway.app/dogs", crear)
+        .post("http://localhost:3001/dogs", crear)
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
     } else {
@@ -142,7 +142,7 @@ const From = () => {
                 type="text"
                 value={crear.nombre}
                 name="nombre"
-                placeholder="O escriba un nombre nuevo"
+                placeholder="Seleccioná una raza o escriba una nueva..."
                 onChange={handleNombreChange}
               />
             </label>
@@ -168,6 +168,7 @@ const From = () => {
                 type="text"
                 value={crear.temperamento}
                 name="temperamento"
+                placeholder="Seleccioná o escribe un temperamento..."
                 onChange={handleInputTemperamentos}
               />
             </label>
@@ -182,6 +183,7 @@ const From = () => {
               type="text"
               value={crear.peso_min}
               name="peso_min"
+              placeholder="Escriba el peso, Ej: 10"
               onChange={onChange}
             />
             <div className={Style.contenedorError}>
@@ -195,6 +197,7 @@ const From = () => {
               type="text"
               value={crear.peso_max}
               name="peso_max"
+              placeholder="Escriba el peso, Ej: 35"
               onChange={onChange}
             />
             <div className={Style.contenedorError}>
@@ -208,6 +211,7 @@ const From = () => {
               type="text"
               value={crear.altura_min}
               name="altura_min"
+              placeholder="Escriba la altura, Ej: 15"
               onChange={onChange}
             />
             <div className={Style.contenedorError}>
@@ -222,6 +226,7 @@ const From = () => {
               value={crear.altura_max}
               name="altura_max"
               id="Altura Máximo"
+              placeholder="Escriba la altura, Ej: 40"
               onChange={onChange}
             />
             <div className={Style.contenedorError}>
@@ -236,6 +241,7 @@ const From = () => {
               value={crear.años_de_vida}
               name="años_de_vida"
               id="Años"
+              placeholder="Escriba los años, Ej: 7 - 10"
               onChange={onChange}
             />
             <div className={Style.contenedorError}>
@@ -249,6 +255,7 @@ const From = () => {
               type="text"
               id="imagen"
               name="imagen"
+              placeholder="Escriba una URL, Ej: https://images..."
               value={crear.imagen}
               onChange={onChange}
             />

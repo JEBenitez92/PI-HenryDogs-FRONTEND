@@ -39,11 +39,18 @@ const rootReducer = (state = initialState, { type, payload }) => {
       return { ...state, Razas: payload };
 
     case ADD_FAVORITO:
-      const favoritoFiltradoraza = state.Razas.filter(raza => raza.id === payload)
-      return{
-          ...state,
-          Favoritos: state.Favoritos.concat(favoritoFiltradoraza)
+      const buscarFavorito = state.Razas.find(raza => raza.id === payload);
+      let favorito = [];
+      const compararFavorito = state.Favoritos.find(raza => raza.id === buscarFavorito.id);
+      if (!compararFavorito) {
+        favorito = [...state.Favoritos, buscarFavorito];
+      } else {
+        favorito = [...state.Favoritos];
       }
+      return {
+        ...state,
+        Favoritos: favorito
+      };
            
     case DELET_FAVORITO:
       const favoritoFiltrado = state.Favoritos.filter(raza => raza.id !== payload)
