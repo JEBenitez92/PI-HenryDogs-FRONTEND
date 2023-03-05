@@ -57,6 +57,20 @@
   left: 20rem;
 }
 
+@media (max-width: 800px) {
+  .contenedorSerbach{
+    left: 6rem;
+    right: 0;
+    margin: 0;
+  }
+
+  .contenedorBotones button {
+    border-radius: 1rem;
+    font-size: 10px;
+  }
+
+}
+
 @media (max-width: 650px) {
   .contenedorBotones {
     display: flex;
@@ -103,16 +117,3 @@
   }
 }
 
-@media (max-width: 800px) {
-  .contenedorSerbach{
-    left: 6rem;
-    right: 0;
-    margin: 0;
-  }
-
-  .contenedorBotones button {
-    border-radius: 1rem;
-    font-size: 10px;
-  }
-
-}

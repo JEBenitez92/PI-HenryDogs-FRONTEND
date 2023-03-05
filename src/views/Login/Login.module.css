@@ -139,6 +139,90 @@
   right: 55rem;
 }
 
+@media (max-width: 800px){
+  .contenedorGeneral {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  .contenedorGeneral h1 {
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    left: 0.1rem;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+
+  .contenedorParrafo {
+    display: block;
+    flex-direction: column;
+    right: 10rem;
+    width: 35rem;
+    padding: 1rem;
+    margin: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .contenedorParrafo p {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .contenedorH3 {
+    display: block;
+    bottom: 4rem;
+    left: 3rem;
+    padding: 0.2rem;
+  }
+
+  .contenedorH3 h3 {
+    font-size: 20px;
+  }
+
+  .contenedorButton {
+    display: inline-block;
+    position: relative;
+    left:0;
+    right: 0;
+    bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedorButton button {
+    font-size: 0.9rem;
+  }
+
+  .cucha2{
+    display: none;
+  }
+
+  .perroAnimado{
+    display: none;
+  }
+
+  .imagenCucha {
+    width: 5rem;
+    height: 5rem;
+    bottom: 0;
+    top: 5rem;
+    right: 0;
+    left: 0;
+  }
+  
+  .imagenPastorAleman {
+    width: 4rem;
+    height: 4rem;
+    top: 5rem;
+    left: 0;
+    right: 0;
+  }
+}
+
 @media (max-width: 650px){
   .contenedorGeneral {
     display: flex;

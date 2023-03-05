@@ -60,6 +60,40 @@
     background-position: center;
 }
 
+@media (max-width: 800px){
+    .containerCard {
+        grid-template-columns: 1fr 1fr;
+        bottom: 2rem;
+      }
+    
+      .contenedorP {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        left: 0.1rem;
+    }
+
+    .contenedorPerroEsperando {
+        width: 20rem;
+        height: 20rem;
+        right: 0;
+        left: 10rem;
+    }
+
+    .h3{
+        font-size: 20px;
+        width: 10rem;
+        height: 10rem;
+        left: 5rem;
+        right: 0;
+    }
+}
+
 @media (max-width: 650px){
     .containerCard {
         display: grid;
@@ -111,36 +145,3 @@
     }
 }
 
-@media (max-width: 800px){
-    .containerCard {
-        grid-template-columns: 1fr 1fr;
-        bottom: 2rem;
-      }
-    
-      .contenedorP {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: relative;
-        left: 0.1rem;
-    }
-
-    .contenedorPerroEsperando {
-        width: 20rem;
-        height: 20rem;
-        right: 0;
-        left: 10rem;
-    }
-
-    .h3{
-        font-size: 20px;
-        width: 10rem;
-        height: 10rem;
-        left: 5rem;
-        right: 0;
-    }
-}

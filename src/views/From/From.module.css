@@ -103,6 +103,17 @@
   box-shadow: 0px 5px #050e17;
 }
 
+@media (max-width: 800px){
+  .contenedorMuestra {
+    width: 98%;
+    height: 85%;
+  }
+
+  .contenedorInfo h3 {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 650px){
   .contenedorGeneral {
     display: grid;
@@ -119,13 +130,4 @@
   }
 }
 
-@media (max-width: 800px){
-  .contenedorMuestra {
-    width: 98%;
-    height: 85%;
-  }
 
-  .contenedorInfo h3 {
-    font-size: 16px;
-  }
-}

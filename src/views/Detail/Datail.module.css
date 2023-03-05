@@ -96,36 +96,6 @@
   background-color: rgb(237, 193, 111);
 }
 
-@media (max-width: 650px){
-  .contenedorDatosImagen {
-    grid-template-columns: 1fr;
-  }
-
-  .contenedorTemperamnetos{
-    width: 25rem;
-    height: 11rem;
-    margin-left: 0.5;
-    margin-right: 0.5;
-    margin-top: 0;
-    padding: 0.5rem;
-  }
-
-  .contenedorTemperamnetos h3 {
-    font-size: 16px;
-    padding: 0.1rem;
-  }
-
-  .imagenEsperando1{
-    width: 20rem;
-    height: 10rem;
-  }
-  
-  .imagenEsperando2{
-    width: 25rem;
-    height: 15rem;
-  }
-}
-
 @media (max-width: 800px){
   .contenedorTemperamnetos{
     width: 40rem;
@@ -158,3 +128,34 @@
     border-radius: 1rem;
   }
 }
+
+@media (max-width: 650px){
+  .contenedorDatosImagen {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedorTemperamnetos{
+    width: 25rem;
+    height: 11rem;
+    margin-left: 0.5;
+    margin-right: 0.5;
+    margin-top: 0;
+    padding: 0.5rem;
+  }
+
+  .contenedorTemperamnetos h3 {
+    font-size: 16px;
+    padding: 0.1rem;
+  }
+
+  .imagenEsperando1{
+    width: 20rem;
+    height: 10rem;
+  }
+  
+  .imagenEsperando2{
+    width: 25rem;
+    height: 15rem;
+  }
+}
+
