@@ -96,13 +96,7 @@
 
 @media (max-width: 650px){
     .containerCard {
-        display: grid;
-        position: relative;
-        justify-content: center;
         grid-template-columns: 1fr;
-        align-items: center;
-        align-content: center;
-        justify-items: center;
         margin: 0;
         padding: 0;
         bottom: 2rem;
@@ -121,21 +115,16 @@
     }
 
     .contenedorPerroEsperando {
-        position: relative;
-        overflow: hidden;
-        width: 25rem;
-        height: 25rem;
-        background-image: url("./Imagenes/perro_esperando.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        width: 20rem;
+        height: 20rem;
+        left: 0;
     }
 
     .h3{
         position: relative;
-        left: 8rem;
+        left: 5rem;
         top: 3rem;
-        font-size: 25px;
+        font-size: 20px;
         width: 10rem;
         height: 10rem;
         align-items: center;
