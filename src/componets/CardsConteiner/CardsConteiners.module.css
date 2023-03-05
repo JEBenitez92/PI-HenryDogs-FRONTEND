@@ -19,3 +19,9 @@
   justify-items: center;
   }
 }
+
+@media (max-width: 800px) {
+  .container {
+  grid-template-columns: 1fr 1fr;
+  }
+}

@@ -105,4 +105,36 @@
     position: relative;
     left: 0.3rem;
   }
+
+  .imagenEsperando1{
+    width: 20rem;
+    height: 10rem;
+  }
+  
+  .imagenEsperando2{
+    width: 25rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contenedorOrdenamiento {
+    right: 4rem;
+    flex-direction: column;
+  }
+
+  .contenedorFiltro {
+    left: 7rem;
+    flex-direction: column;
+  }
+
+  .contenedorFiltro select {
+    margin: 0.1rem;
+    font-size: calc(6px + 2vmin);
+  }
+
+  .contenedorOrdenamiento select {
+    margin: 0.1rem;
+    font-size: calc(6px + 2vmin);
+  }
 }

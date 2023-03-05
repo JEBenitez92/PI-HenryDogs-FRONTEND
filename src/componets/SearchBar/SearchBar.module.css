@@ -36,3 +36,13 @@
     border-radius: 0.4rem;
   }
 }
+
+@media (max-width: 800px){
+  .conteiner button{
+    font-size: calc(4px + 2vmin);
+  }
+
+  .conteiner input {
+    font-size: calc(4px + 2vmin);
+  }
+}

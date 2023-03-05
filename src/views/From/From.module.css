@@ -118,3 +118,14 @@
     display: none;
   }
 }
+
+@media (max-width: 800px){
+  .contenedorMuestra {
+    width: 98%;
+    height: 85%;
+  }
+
+  .contenedorInfo h3 {
+    font-size: 16px;
+  }
+}
