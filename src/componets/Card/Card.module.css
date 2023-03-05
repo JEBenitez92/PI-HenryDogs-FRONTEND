@@ -93,13 +93,12 @@
 
 @media (max-width: 650px) {
   .conteiner {
-    width: 23em;
-    height: 36em;
+    width: 20em;
+    height: 33em;
   }
 
   .carConteiner {
-    width: 21em;
-    height: 36em;
+    width: 18em;
+    height: 33em;
   }
-
 }

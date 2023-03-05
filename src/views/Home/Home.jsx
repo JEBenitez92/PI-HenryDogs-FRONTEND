@@ -13,13 +13,13 @@ import {
 } from "../../redux/actions.js";
 import Paginacion from "../../componets/Paginacion/Paginacion.jsx";
 
-const Home = () => {
+const Home = ({paginaActual, setPaginaActual}) => {
   const dispatch = useDispatch();
   const temperamentos = useSelector((state) => state.Temperamento);
   const razaNombre = useSelector((state) => state.RazaNombre);
   const nombres = razaNombre.map((raza) => raza.nombre);
   const nombre = nombres.filter((item, index) => {
-    return nombres.indexOf(item) === index;
+    return nombres.indexOf(item.trim()) === index;
   });
   
   const [cargando, setCargando] = useState(true);
@@ -38,10 +38,11 @@ useEffect(() => {
 
   //para la paginacion
   const [paginas] = useState(8);
-  const [paginaActual, setPaginaActual] = useState(1);
+  // const [paginaActual, setPaginaActual] = useState(1);
 
   const ultimoIndex = paginaActual * paginas;
   const primerIndex = ultimoIndex - paginas;
+  
 
   // Para el ordenamiento
   
@@ -115,6 +116,7 @@ useEffect(() => {
           <CardsContainers
             ultimoIndex={ultimoIndex}
             primerIndex={primerIndex}
+
           />
         </div>
       

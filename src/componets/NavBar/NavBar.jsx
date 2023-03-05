@@ -4,7 +4,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import { useDispatch } from "react-redux";
 import { vaciarFavoritos } from "../../redux/actions";
 
-const NavBar = () => {
+const NavBar = ({paginaActual, setPaginaActual}) => {
   const location = useLocation();
   const dispatch = useDispatch();
 
@@ -40,7 +40,7 @@ const NavBar = () => {
         ) : null}
       </div>
 
-      <div className={Style.contenedorSerbach}>{location.pathname === "/home" ? <SearchBar /> : null}</div>
+      <div className={Style.contenedorSerbach}>{location.pathname === "/home" ? <SearchBar setPaginaActual={setPaginaActual} /> : null}</div>
 
       <div className={Style.contenedorButtonBorrar}>
         {location.pathname === "/favoritos" ? (

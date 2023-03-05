@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { getRazaName } from "../../redux/actions";
 import Style from "./SearchBar.module.css";
 
-export default function SearchBar() {
+export default function SearchBar({setPaginaActual}) {
   const [nombre, setNombre] = useState("");
 
   const dispatch = useDispatch();
@@ -20,6 +20,7 @@ export default function SearchBar() {
   const buscarLimpiar = () => {
     buscarRaza();
     limpiarImput();
+    setPaginaActual(1)
   };
 
   return (
