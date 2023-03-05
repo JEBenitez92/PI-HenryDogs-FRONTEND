@@ -32,7 +32,7 @@ export function validate(crear) {
       "El peso tiene que ser definido máximo por dos cifras. Ej: 5 o 25";
   }
   if (parseInt(crear.peso_min) < 1) {
-    error.peso_min = "El valor del peso minimo tiene que ser mayor a 3";
+    error.peso_min = "El valor del peso minimo tiene que ser mayor a 0";
   }
   if (parseInt(crear.peso_min) > parseInt(crear.peso_max)) {
     error.peso_min = "El valor del peso minimo tiene que ser menor al peso máximo";
@@ -52,7 +52,7 @@ export function validate(crear) {
       "El peso tiene que ser definido máximo por dos cifras. Ej: 5 o 25";
   }
   if (parseInt(crear.peso_max) < 2) {
-    error.peso_max = "El valor del peso máximo tiene que ser mayor a 2";
+    error.peso_max = "El valor del peso máximo tiene que ser mayor a 1";
   }
   if (parseInt(crear.peso_max) < parseInt(crear.peso_min)) {
     error.peso_max = "El valor del peso máximo tiene que ser mayor al peso minimo";
@@ -75,7 +75,7 @@ export function validate(crear) {
     error.altura_min = "El valor de la altura minima tiene que ser mayor a 9";
   }
   if (parseInt(crear.altura_min) > 80) {
-    error.altura_min = "El valor de la altura minima tiene que ser menor a 80";
+    error.altura_min = "El valor de la altura minima tiene que ser menor a 81";
   }
 
   if(parseInt(crear.altura_min) > parseInt(crear.altura_max)) {
@@ -98,7 +98,7 @@ export function validate(crear) {
   if (parseInt(crear.altura_max) <= 10) {
     error.altura_max = "El valor de la altura máxima tiene que ser mayor a 10";
   }
-  if (parseInt(crear.altura_max) > 85) {
+  if (parseInt(crear.altura_max) >= 85) {
     error.altura_max = "El valor de la altura maxima tiene que ser menor a 85";
   }
   if (parseInt(crear.altura_max) < parseInt(crear.altura_min)) {
