@@ -80,10 +80,17 @@ const From = () => {
       if (err.length <= 0) {
         formValid = true;
       }
+      let errores = []
+      if (err.length > 0) {
+        errores.push(err);
+      }
+      if(errores.length ){
+        formValid = true
+      }
     });
     if (formValid) {
       alert(
-        "No se puede crear la Raza, por favor complete todos los campos requeridos. O verifique que la infrmacion ingresada sea correcta"
+        "No se puede crear la Raza, por favor complete todos los campos requeridos. O verifique que la informacion ingresada sea correcta"
       );
       return;
     }
