@@ -238,13 +238,13 @@
     width: 20rem;
     padding: 0.5rem;
     margin: 0;
-    right: 0;
+    right: 1rem;
     top: 0;
   }
 
   .contenedorParrafo p {
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .contenedorH3 {
@@ -267,7 +267,7 @@
     position: relative;
     left:0;
     right: 0;
-    bottom: 18rem;
+    bottom: 25rem;
     justify-content: center;
     align-items: center;
   }
