@@ -79,7 +79,7 @@ export function validate(crear) {
   }
 
   if(parseInt(crear.altura_min) > parseInt(crear.altura_max)) {
-    return error.altura_min = "La altura minima no puede ser mayor a la altura máxima"
+    error.altura_min = "La altura minima no puede ser mayor a la altura máxima"
   }
   //validar altura máxima
 
