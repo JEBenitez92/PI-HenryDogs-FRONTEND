@@ -10,6 +10,10 @@
     background-color: rgb(241, 224, 177);
 }
 
+.container h1 {
+    margin-bottom: 3rem;
+}
+
 .containerCard {
     display: grid;
     position: relative;
