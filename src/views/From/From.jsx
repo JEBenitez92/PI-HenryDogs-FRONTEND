@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { validate } from "./Validacion";
 import Style from "./From.module.css";
 import axios from "axios";
+import { getRazasNombres, getTemperamentos } from "../../redux/actions";
 
 const From = () => {
   const temperamentos = useSelector((state) => state.Temperamento);
@@ -12,6 +13,12 @@ const From = () => {
   const nombre = nombres.filter((item, index) => {
     return nombres.indexOf(item) === index;
   });
+
+  const dispacht = useDispatch()
+  useEffect(()=>{
+    dispacht(getRazasNombres())
+    dispacht(getTemperamentos())
+  },[dispacht])
 
   const [crear, setCrear] = useState({
     nombre: "",
@@ -36,11 +43,23 @@ const From = () => {
   });
 
   const handleNombreChange = (event) => {
+    setError(
+      validate({
+        ...crear,
+        nombre: event.target.value,
+      })
+    );
     setCrear({ ...crear, nombre: event.target.value });
   };
 
   const handleTemperamentoChange = (event) => {
     const temp = event.target.value;
+    setError(
+      validate({
+        ...crear,
+        temperamento: temp,
+      })
+    );
     if (temp !== "Temperamentos..." && !crear.temperamento.includes(temp)) {
       if (crear.temperamento.length < 2) {
         setCrear({ ...crear, temperamento: temp });
@@ -55,6 +74,12 @@ const From = () => {
 
   const handleInputTemperamentos = (event) => {
     const nuevoValor = event.target.value;
+    setError(
+      validate({
+        ...crear,
+        temperamento: nuevoValor,
+      })
+    );
     setCrear({
       ...crear,
       temperamento: nuevoValor,
