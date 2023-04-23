@@ -10,6 +10,7 @@
   width: 17em;
   height: 30em;
   padding: 1em;
+  padding-top: 2rem;
   margin: 0.3em;
 }
 
@@ -24,8 +25,8 @@
   background-color: black;
   color: rgb(242, 244, 242);
   opacity: 0.9;
-  width: 15em;
-  height: 30em;
+  width: 14em;
+  height: 28em;
 }
 
 .carConteiner img {

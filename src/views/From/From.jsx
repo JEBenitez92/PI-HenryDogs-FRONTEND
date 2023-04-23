@@ -20,6 +20,9 @@ const From = () => {
     dispacht(getTemperamentos())
   },[dispacht])
 
+  const Ruta = "http://localhost:3001"
+// const Ruta = ""
+
   const [crear, setCrear] = useState({
     nombre: "",
     peso_min: "",
@@ -129,7 +132,7 @@ const From = () => {
 
       //para mandar la informacion a la base de datos:
       axios
-        .post("http://localhost:3001/dogs", crear)
+        .post(`${Ruta}/dogs`, crear)
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
     } else {
