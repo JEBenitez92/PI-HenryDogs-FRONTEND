@@ -20,8 +20,8 @@ const From = () => {
     dispacht(getTemperamentos())
   },[dispacht])
 
-  const Ruta = "http://localhost:3001"
-// const Ruta = ""
+  // const Ruta = "http://localhost:3001"
+const Ruta = "pihenrydogsbacken-production.up.railway.app"
 
   const [crear, setCrear] = useState({
     nombre: "",
