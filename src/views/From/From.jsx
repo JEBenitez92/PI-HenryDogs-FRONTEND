@@ -21,7 +21,7 @@ const From = () => {
   },[dispacht])
 
   // const Ruta = "http://localhost:3001"
-const Ruta = "pihenrydogsbacken-production.up.railway.app"
+const Ruta = "https://pihenrydogsbacken-production.up.railway.app"
 
   const [crear, setCrear] = useState({
     nombre: "",

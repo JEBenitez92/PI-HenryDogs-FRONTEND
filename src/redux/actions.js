@@ -17,7 +17,7 @@ import temperamentosTraducidos from "../Auxiliar/traduccion";
 import { traducir, traducRazaTemp } from "../Auxiliar/auxiliar";
 
 // const Ruta = "http://localhost:3001"
-const Ruta = "pihenrydogsbacken-production.up.railway.app"
+const Ruta = "https://pihenrydogsbacken-production.up.railway.app"
 
 export const ordenTemp = (value) => {
   return {
